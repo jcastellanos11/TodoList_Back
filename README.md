@@ -182,13 +182,6 @@ export default pool;
 
 ---
 
-## 👨‍💻 Autor
-
-**John Janer Castellanos**  
-Desarrollador Full Stack — [LinkedIn](https://www.linkedin.com) | [GitHub](https://github.com)
-
----
-
 ### 🏁 Licencia
 
 Este proyecto se distribuye bajo la licencia **MIT**.  
