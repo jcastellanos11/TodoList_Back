@@ -62,6 +62,36 @@ FRONTEND_URL=http://localhost:5173
 
 ---
 
+## 🗄️ Creación de la base de datos y tabla
+
+Ejecuta los siguientes comandos SQL en tu servidor PostgreSQL:
+
+```sql
+-- Crear base de datos
+CREATE DATABASE todolist;
+
+-- Conectarse a la base de datos
+\c todolist;
+
+-- public.tasks definition
+
+-- Drop table
+-- DROP TABLE tasks;
+
+CREATE TABLE tasks (
+  id serial4 NOT NULL,
+  title varchar(255) NOT NULL,
+  description text NULL,
+  completed bool DEFAULT false NULL,
+  created_at timestamp DEFAULT now() NULL,
+  CONSTRAINT tasks_pkey PRIMARY KEY (id)
+);
+```
+
+> 💡 Este script también se encuentra en el archivo `database/init.sql` dentro del proyecto.
+
+---
+
 ## ▶️ Ejecución del servidor
 
 Inicia el servidor de desarrollo con:
@@ -179,6 +209,13 @@ const pool = new Pool({
 
 export default pool;
 ```
+
+---
+
+## 👨‍💻 Autor
+
+**John Janer Castellanos**  
+Desarrollador Full Stack — [LinkedIn](https://www.linkedin.com) | [GitHub](https://github.com)
 
 ---
 
